@@ -7,11 +7,8 @@ import android.os.Build;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-
 import androidx.core.content.ContextCompat;
-import androidx.core.widget.ImageViewCompat;
 import androidx.databinding.BindingAdapter;
-
 import com.one8.data_bindingtest.R;
 
 public class BindingAdapters {
@@ -23,7 +20,7 @@ public class BindingAdapters {
     public static void popularityIcon(ImageView view,Popularity popularity){
         int color = getAssociatedColor(popularity, view.getContext());
 
-        ImageViewCompat.setImageTintList(view, ColorStateList.valueOf(color));
+        view.setImageTintList(ColorStateList.valueOf(color));
 
         view.setImageDrawable(getDrawablePopularity(popularity, view.getContext()));
     }

@@ -21,10 +21,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="viewmodel"
             type="com.one8.data_bindingtest.kotlin.viewmodel.Kotlin_ProfileLiveDataViewModel"/>
+<!--        <variable-->
+<!--            name="viewmodel"-->
+<!--            type="com.one8.data_bindingtest.kotlin.viewmodel.Kotlin_ProfileObservableViewModel"/>-->
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
